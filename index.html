@@ -6,9 +6,124 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
     <title>Modal Menu Slider</title>
+    <script
+      src="https://kit.fontawesome.com/71209777ef.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    
+    <div class="logo">
+      <img src="https://randomuser.me/api/portraits/men/72.jpg" alt="user" />
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Portfolio</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Contact me</a></li>
+      </ul>
+    </nav>
+
+    <header>
+      <button id="toggle" class="toggle">
+        <i class="fa fa-bars fa-2x"></i>
+      </button>
+
+      <h1>My Landing Page</h1>
+
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero,
+        cumque.
+      </p>
+
+      <button class="cta-btn" id="open">Sign Up</button>
+    </header>
+
+    <div class="container">
+      <h2>What is this landing page about?</h2>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+        possimus fugit molestiae, sequi a, nobis esse eveniet porro, blanditiis
+        accusantium rem vel architecto sunt molestias exercitationem aspernatur
+        nisi ipsa doloremque.
+      </p>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iusto
+        cupiditate id voluptatibus nobis itaque minus aut aperiam! Tempore, sed
+        quibusdam!
+      </p>
+    </div>
+
+    <h2>Tell Me More</h2>
+
+    <p>
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Pariatur aperiam
+      quaerat iste labore odio temporibus quisquam quis voluptatum tempora
+      inventore, iusto, voluptatem est. Atque est dolores illo! Tenetur cum
+      magnam odit similique provident nisi animi, voluptas dolor saepe nulla
+      quis.
+    </p>
+
+    <h2>Benefits</h2>
+
+    <ul>
+      <li>Lifetime Access</li>
+      <li>30 Day Money Back</li>
+      <li>Tailored Customer support</li>
+    </ul>
+
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+      reiciendis temporibus laboriosam dolores, atque reprehenderit nihil dolor
+      repellendus obcaecati cupiditate explicabo alias beatae a fugiat! Quasi
+      repellendus iure velit cupiditate, earum ad illum eveniet magni error,
+      veritatis, expedita assumenda ex itaque in dicta voluptatum explicabo eum
+      blanditiis quibusdam debitis. Laudantium sequi sed labore repudiandae
+      nisi, reprehenderit in! In aliquam dolor quia error perspiciatis, vero
+      animi. Reiciendis non magnam inventore deleniti!
+    </p>
+
+    <!-- Modal -->
+    <div class="modal-container" id="modal">
+      <div class="modal">
+        <button class="close-btn" id="close">
+          <i class="fa fa-times"></i>
+        </button>
+        <div class="modal-header">
+          <h3>Sign Up</h3>
+        </div>
+        <div class="modal-content">
+          <p>Register with us to get offers, support and more</p>
+          <form class="modal-form">
+            <div>
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Enter Name" />
+            </div>
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Enter Email" />
+            </div>
+            <div>
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+              />
+            </div>
+            <div>
+              <label for="confirm">Confirm password</label>
+              <input
+                type="password"
+                id="confirm"
+                placeholder="Confirm Password"
+              />
+            </div>
+            <input type="submit" value="submit" class="submit-btn">
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
